@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー - ミマリモ</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif; max-width: 640px; margin: 0 auto; padding: 24px 16px; line-height: 1.8; color: #333; }
+  h1 { font-size: 1.4em; border-bottom: 1px solid #ddd; padding-bottom: 8px; }
+  h2 { font-size: 1.1em; margin-top: 2em; }
+  p, li { font-size: 0.95em; }
+  ul { padding-left: 1.5em; }
+  .updated { color: #888; font-size: 0.85em; }
+</style>
+</head>
+<body>
+
+<h1>プライバシーポリシー</h1>
+<p class="updated">最終更新日: 2026年6月20日</p>
+
+<p>株式会社考え中（以下「当社」）は、iOSアプリ「ミマリモ」（以下「本アプリ」）における利用者情報の取り扱いについて、以下のとおり定めます。</p>
+
+<h2>1. 取得する情報と利用目的</h2>
+<p>本アプリは、親子のデバイスをつなぎ、親が子のデバイスのアプリ利用を遠隔でロック／解除する機能を提供するために、必要最小限の情報のみを取得します。</p>
+<table style="border-collapse:collapse; width:100%; font-size:0.95em; margin:1em 0;">
+  <tr style="border-bottom:1px solid #ddd;">
+    <th style="text-align:left; padding:8px;">情報</th>
+    <th style="text-align:left; padding:8px;">内容</th>
+    <th style="text-align:left; padding:8px;">利用目的</th>
+  </tr>
+  <tr>
+    <td style="padding:8px;">匿名認証ID</td>
+    <td style="padding:8px;">Firebaseの匿名認証により発行される識別子。氏名・メールアドレス・アカウントとは紐づきません</td>
+    <td style="padding:8px;">親子のデバイスを識別し、ペアリング（接続）を成立させるため</td>
+  </tr>
+  <tr style="border-top:1px solid #eee;">
+    <td style="padding:8px;">デバイス名</td>
+    <td style="padding:8px;">デバイスに設定された名前（iOS 16以降は通常「iPhone」「iPad」等の機種名のみ）</td>
+    <td style="padding:8px;">親が接続中のデバイスを見分けられるようにするため</td>
+  </tr>
+  <tr style="border-top:1px solid #eee;">
+    <td style="padding:8px;">プッシュ通知トークン</td>
+    <td style="padding:8px;">プッシュ通知の宛先となる識別子（FCMトークン）</td>
+    <td style="padding:8px;">親の操作（ロック／解除）を子のデバイスに届けるため</td>
+  </tr>
+  <tr style="border-top:1px solid #eee;">
+    <td style="padding:8px;">ペアリング情報</td>
+    <td style="padding:8px;">家族グループ内の役割（親／子）、最終接続時刻、ロック状態、使い捨てのペアリングコード（発行から1時間で失効）</td>
+    <td style="padding:8px;">リモート操作機能を提供するため</td>
+  </tr>
+</table>
+<p>上記以外の情報（氏名、メールアドレス、電話番号、位置情報、広告識別子、Web閲覧履歴等）は一切取得しません。本アプリはアクセス解析ツール（アナリティクス）を導入しておらず、利用状況の解析や広告配信のためのデータ収集は行いません。</p>
+<p>無料体験期間の開始日時は、お使いのデバイス内（Keychain）にのみ保存し、外部には送信しません。</p>
+
+<h2>2. データの送信先（第三者による処理）</h2>
+<p>本アプリは、機能の提供のために以下の事業者のサービスを利用します。</p>
+<ul>
+  <li><strong>Firebase（Google LLC）</strong>：認証、データベース、プッシュ通知の配信、サーバー処理に利用します。上記の情報はGoogleのサーバーで処理・保存されます。Googleのプライバシーポリシーが適用されます</li>
+  <li><strong>Apple（App Store）</strong>：アプリ内課金（買い切り購入）の決済に利用します。決済に関する情報はAppleが処理し、当社が取得・保持することはありません</li>
+</ul>
+<p>当社は、上記の機能提供に必要な範囲を超えて、取得した情報を第三者に提供・販売することはありません。</p>
+
+<h2>3. データの保存と削除</h2>
+<ul>
+  <li>ペアリング情報はFirebase上に保存されます。親が「接続を解除」すると、当該の家族グループのデータは削除されます</li>
+  <li>ペアリングコードは、発行から1時間の経過、または子のデバイスでの入力（使用）により削除されます（使い捨て）</li>
+  <li>無料体験の開始日時は、不正な体験リセットを防ぐため、アプリを削除してもデバイス内（Keychain）に残る場合があります</li>
+  <li>データの削除をご希望の場合は、本ポリシー末尾の問い合わせ窓口までご連絡ください</li>
+</ul>
+
+<h2>4. お子様のデータの取り扱い</h2>
+<p>本アプリは、保護者（親）がお子様のデバイスを管理するためのツールです。</p>
+<ul>
+  <li>お子様のデバイスについて取得するのは、デバイス名・プッシュ通知トークン・ロック状態など、機能の提供に必要な情報のみです</li>
+  <li>氏名等の個人情報や、アプリの利用履歴・行動履歴は取得しません</li>
+  <li>本アプリは日本国内での利用を前提とし、日本の個人情報保護法に準拠して運用します</li>
+  <li>海外での提供にあたっては、COPPA（米国）やGDPR（EU）等の各国法令への適合を別途検討します</li>
+  <li>お子様のデバイスの設定および接続は、保護者が行うことを前提としています</li>
+</ul>
+
+<h2>5. 同意と利用者の選択</h2>
+<ul>
+  <li>本アプリの利用を開始（購入または無料体験の開始）した時点で、本ポリシーに同意したものとみなします</li>
+  <li>プッシュ通知は、デバイスのOS設定からいつでも無効化できます（無効化すると、ロック／解除がお子様のデバイスに届かないなど、機能が制限されます）</li>
+  <li>Family Controls（スクリーンタイム）の認可は、iOSの「設定」からいつでも変更・停止できます</li>
+</ul>
+
+<h2>6. ポリシーの変更</h2>
+<p>本ポリシーを変更する場合は、本ページの更新により通知します。変更後のポリシーは本ページに掲載した時点で効力を生じます。</p>
+
+<h2>7. お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせ、データの削除請求等は、<a href="https://docs.google.com/forms/d/e/1FAIpQLSfP4a_R4zIQsM6lkBIc-Lnhilc6ZKPQ0Juc7d7EO6FQXXIiPA/viewform" target="_blank">お問い合わせフォーム</a>よりご連絡ください。</p>
+<p>株式会社考え中</p>
+
+</body>
+</html>
