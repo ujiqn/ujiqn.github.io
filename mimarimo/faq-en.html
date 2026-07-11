@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ - Mimarimo</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif; max-width: 640px; margin: 0 auto; padding: 24px 16px; line-height: 1.8; color: #333; }
+  h1 { font-size: 1.4em; border-bottom: 1px solid #ddd; padding-bottom: 8px; }
+  h2 { font-size: 1.1em; margin-top: 2em; }
+  h3 { font-size: 1.0em; margin-top: 1.5em; color: #555; }
+  p, li { font-size: 0.95em; }
+  ul, ol { padding-left: 1.5em; }
+  ol li { margin: 0.3em 0; }
+  .updated { color: #888; font-size: 0.85em; }
+  .lang-switch { text-align: right; font-size: 0.85em; }
+  a { color: #2BA866; }
+  strong { color: #2BA866; }
+</style>
+</head>
+<body>
+
+<p class="lang-switch"><a href="./faq.html">日本語</a></p>
+
+<h1>FAQ</h1>
+<p class="updated">Last updated: July 10, 2026</p>
+
+<h2>I want to disconnect, but I don't have the parent's device with me</h2>
+
+<p>Normally you disconnect from the parent's device with "Disconnect". If the parent's device isn't available right away, you can release the lock from the child's device as follows.</p>
+
+<h3>If you're connected in simple mode</h3>
+<p>On the child's device, open the iOS "Settings" app and tap in this order.</p>
+<ol>
+  <li>"Screen Time"</li>
+  <li>Scroll to the bottom and tap "Turn Off Screen Time"</li>
+</ol>
+<p>This releases Mimarimo's lock (the device passcode is required, but no Screen Time passcode is needed).</p>
+
+<h3>If you're connected in Family Sharing mode</h3>
+<p>In this mode, the lock can't be released from the child's device. The parent should do the following from a new device.</p>
+<ol>
+  <li>Sign in to iCloud with the parent's Apple Account</li>
+  <li>Go to "Settings" → "Screen Time" → reset the "Screen Time Passcode" (if you've forgotten it, use "Reset with Apple Account")</li>
+  <li>Turn off "Content & Privacy Restrictions"</li>
+</ol>
+<p>The settings sync to the child's device over the network and the lock is released. You don't need to touch the child's device.</p>
+
+<h2>I tap the power button on the parent's device, but nothing changes on the child's device</h2>
+
+<p>First, check that iOS "Settings" → "Screen Time" → "Mimarimo" is ON on the child's device. If it's OFF, Mimarimo can't lock or unlock anything.</p>
+
+<p>Right after toggling Screen Time ON/OFF on the child's device, the change may not reach the Mimarimo app immediately (this is how iOS works). Please <strong>fully quit Mimarimo on the child's device and open it again</strong> — the latest state will then be reflected.</p>
+
+<p>How to fully quit an app:</p>
+<ol>
+  <li>Go back to the Home Screen</li>
+  <li>Slowly swipe up from the bottom of the screen and pause in the middle</li>
+  <li>When the app cards appear, swipe the Mimarimo card up and away</li>
+  <li>Open the Mimarimo app again</li>
+</ol>
+
+<p>If it still doesn't work, please reach out via the contact form.</p>
+
+<h2>I got a new parent device. How do I reconnect?</h2>
+
+<ol>
+  <li>Install Mimarimo on the new parent device</li>
+  <li>In Settings → "Connected Devices", disconnect from the old device</li>
+  <li>Get a new code and enter it on the child's device</li>
+</ol>
+
+<p>You can now control the child's device from the new parent device. Your one-time purchase is tied to your Apple Account, so it carries over to the new device (and with Apple Family Sharing it's automatically shared with other parents in your family).</p>
+
+<h2>Family Sharing is linked but doesn't seem to work</h2>
+
+<p>The stronger protection provided by Family Sharing (such as preventing app deletion) is <strong>verified to work when the child's device runs iOS 26 or later</strong>. On iOS 17–25, the Family Sharing link itself is established, but the protection may not take effect.</p>
+
+<p>Keeping your child's device updated to the latest iOS gives you the most reliable protection.</p>
+
+<p>Using Family Sharing also requires the following.</p>
+
+<ul>
+  <li>Family Sharing is enabled on both the parent's and child's Apple Accounts</li>
+  <li>The child's Apple Account is added to your family group as a child account</li>
+  <li>A Screen Time passcode is set on the parent's device (a separate 4-digit code from the child device's passcode)</li>
+</ul>
+
+<p>Once these are in place, opening Mimarimo on the child's device links it with Family Sharing automatically — no manual steps needed.</p>
+
+<h2>Preparing a hand-me-down iPhone/iPad for your child</h2>
+
+<p>If you're repurposing a previously used iPhone or iPad for your child, <strong>be sure to erase (reset) the device first, then set it up with your child's Apple Account</strong>.</p>
+
+<p>Just signing out of your own Apple Account in "Settings" and signing in with your child's account can leave the previous account's configuration on the device, which may prevent Family Sharing and Mimarimo from linking correctly.</p>
+
+<p>How to erase:</p>
+
+<ol>
+  <li>(Optional) Back up any data you need</li>
+  <li>"Settings" → "General" → "Transfer or Reset iPhone"</li>
+  <li>Tap "Erase All Content and Settings"</li>
+  <li>Enter the device passcode and Apple Account password</li>
+  <li>After the reset, sign in with <strong>your child's Apple Account</strong> during setup</li>
+  <li>Accept the Family Sharing invitation</li>
+</ol>
+
+<p>Then install Mimarimo and you're ready to go.</p>
+
+<p>Reference: <a href="https://support.apple.com/en-us/109511" target="_blank">Apple Support — What to do before you sell, give away, or trade in your iPhone</a></p>
+
+<h2>I want to start over from scratch</h2>
+
+<p>Delete Mimarimo from the child's device and install it again. This returns it to the initial state (no pairing, no authorization). Then get a new code on the parent's device and reconnect.</p>
+
+<h2>Can my child still use Phone and Messages while locked?</h2>
+
+<p>Yes. iOS system apps such as Phone and Messages are not subject to Mimarimo's lock, so emergency contact stays available.</p>
+
+<p>That said, this is a property of iOS itself, and we can't guarantee that emergency communications will always get through.</p>
+
+<h2>What ages is Mimarimo for?</h2>
+
+<p>Mimarimo is designed as <strong>a remote for parents to stay close during the years when self-control is still hard</strong> — mainly <strong>preschoolers (ages 3–6) through elementary schoolers</strong>.</p>
+
+<p>Mimarimo technically works for older children too, but <strong>we don't recommend it</strong>.</p>
+
+<p>Using a lock against the will of a child who is old enough to reason tends to erode trust and invite workaround-hunting and pushback. What that age really needs isn't a parent who stops them, but the transition to <strong>keeping promises</strong> and <strong>self-regulation</strong>.</p>
+
+<p>Also, once a child understands how Apple Accounts and passcodes work, technical loopholes appear (borrowing the parent's device, coaxing out the passcode, and so on). We see this not as a weakness but as a reflection of what Mimarimo is: <strong>a remote for promises, not enforcement</strong>.</p>
+
+<p>When your child outgrows it, simply stop using Mimarimo. It's a one-time purchase, so there's nothing to cancel — just delete the app.</p>
+
+<h2>Is Mimarimo a parental control app?</h2>
+
+<p>We call it <strong>a remote for keeping promises</strong>.</p>
+
+<p>It uses the same mechanism as iOS "Screen Time" (Family Controls), but the goal is <strong>not surveillance or stricter restrictions — it's making the promise between parent and child visible on the device</strong>. It has no location tracking, web history, social media monitoring, or screen-time statistics (<strong>it simply switches between "you can play" and "sleeping" at the parent's tap</strong>).</p>
+
+<h2>Contact</h2>
+
+<p>For anything else, please reach out via the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfP4a_R4zIQsM6lkBIc-Lnhilc6ZKPQ0Juc7d7EO6FQXXIiPA/viewform" target="_blank">contact form</a>.</p>
+
+</body>
+</html>
